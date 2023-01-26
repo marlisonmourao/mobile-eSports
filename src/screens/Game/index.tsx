@@ -1,4 +1,4 @@
-import { FlatList, Image, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
@@ -73,13 +73,18 @@ export function Game() {
           subtitle="Conecte-se e comece a jogar!"
          />
 
-         <FlatList 
+         <FlatList  
            data={duo}
            keyExtractor={item => item.id}
            horizontal
            showsVerticalScrollIndicator={false}
            style={styles.containerList}
-           contentContainerStyle={styles.contentList}
+           ListEmptyComponent={() => (
+            <Text style={styles.emptyListText}>
+              Não há anúncios publicados ainda.
+            </Text>
+           )}
+           contentContainerStyle={[duo.length > 0 ? styles.contentList : styles.emptyListContent ]}
            renderItem={({ item }) => (
             <DuoCard 
               data={item}

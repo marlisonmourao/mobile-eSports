@@ -29,7 +29,7 @@
 
 - Você pode acessar o layout do [**projeto no Figma** aqui](https://www.figma.com/file/a1THQc0A7wM3f9rJ9x21ip/NLW-eSports-(Community)?node-id=0%3A1&t=TYjlRcdDLRlIkKgC-0).
 - Você pode acessar a versão web aqui [**projeto no github** aqui](https://github.com/marlisonmourao/web-eSports).
-- Você pode acessar a API usada no projeto aqui [**projeto no github** aqui](git@github.com:marlisonmourao/server-eSports.git).
+- Você pode acessar a API usada no projeto aqui [**projeto no github** aqui](https://github.com/marlisonmourao/server-eSports).
 
 <br>
 <br>
